@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+import Seo from '../components/Seo.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Crumb {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  faqs?: { q: string; a: string }[];
+  breadcrumbs?: Crumb[];
+  pageType?: string;
+}
+
+const { title, description, path, faqs = [], breadcrumbs = [], pageType = 'WebPage' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <Seo {title} {description} {path} {faqs} {breadcrumbs} {pageType} />
+  </head>
+  <body class="flex min-h-screen flex-col bg-white font-sans text-slate-800 antialiased">
+    <Header />
+    <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-10">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

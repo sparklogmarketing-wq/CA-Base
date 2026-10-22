@@ -1,0 +1,68 @@
+---
+import { site } from '../config/site';
+
+interface Crumb {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  faqs?: { q: string; a: string }[];
+  breadcrumbs?: Crumb[];
+  pageType?: string;
+}
+
+const { title, description, path, faqs = [], breadcrumbs = [], pageType = 'WebPage' } = Astro.props;
+const canonical = new URL(path, site.url).href;
+const ogType = ['Guide', 'Resource', 'Resource Hub', 'Blog Hub'].includes(pageType) ? 'article' : 'website';
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': pageType === 'Guide' ? 'Article' : 'WebPage',
+    headline: title,
+    description,
+    url: canonical,
+    publisher: { '@type': 'Organization', name: site.name, url: site.url },
+  },
+];
+if (breadcrumbs.length) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.label,
+      item: new URL(c.href, site.url).href,
+    })),
+  });
+}
+if (faqs.length) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  });
+}
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={canonical} />
+<meta property="og:site_name" content={site.name} />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

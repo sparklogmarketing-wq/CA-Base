@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import MarkdownContent from '../components/MarkdownContent.astro';
+import { pages, fill, fillPage, cleanLabel, type Page } from '../lib/pages';
+import { cities, placeholders, clusterHubs } from '../config/site';
+
+export function getStaticPaths() {
+  const routes = [];
+  for (const page of pages) {
+    if (page.fm.isCityTemplate) {
+      for (const city of cities) {
+        const displayVars = { ...placeholders, city: city.name };
+        const slugVars = { ...placeholders, city: city.slug };
+        const slug = fill(page.fm.slug, slugVars).replace(/^\//, '');
+        routes.push({ params: { slug }, props: { page, displayVars, slugVars, city } });
+      }
+    } else {
+      const seed = cities[0];
+      const displayVars = { ...placeholders, city: seed.name };
+      const slugVars = {
+        ...Object.fromEntries(Object.entries(placeholders).map(([k, v]) => [k, v.toLowerCase()])),
+        city: seed.slug,
+      };
+      const s = fill(page.fm.slug, slugVars);
+      const slug = s === '/' ? undefined : s.replace(/^\//, '');
+      routes.push({ params: { slug }, props: { page, displayVars, slugVars } });
+    }
+  }
+  return routes;
+}
+
+interface Props {
+  page: Page;
+  displayVars: Record<string, string>;
+  slugVars: Record<string, string>;
+  city?: (typeof cities)[number];
+}
+
+const { page, displayVars, slugVars, city } = Astro.props as Props;
+const resolved = fillPage(page, displayVars, slugVars);
+const { fm, content } = resolved;
+
+const crumbs = [{ label: 'Home', href: '/' }];
+if (city) {
+  crumbs.push({ label: `CA Firm in ${city.name}`, href: `/ca-firm-in-${city.slug}` });
+} else if (fm.cluster !== 'Core') {
+  const hubSlug = clusterHubs[fm.cluster];
+  if (hubSlug && hubSlug !== fm.slug) {
+    const hub = pages.find((p) => p.fm.slug === hubSlug);
+    crumbs.push({
+      label: hub ? cleanLabel(hub.fm.pageName, displayVars) : cleanLabel(fm.cluster, displayVars),
+      href: hubSlug,
+    });
+  }
+}
+crumbs.push({ label: cleanLabel(fm.pageName, displayVars) || fm.pageName, href: fm.slug });
+
+const path = Astro.url.pathname === '' ? '/' : Astro.url.pathname;
+---
+<BaseLayout title={fm.title} description={fm.description} path={path} faqs={fm.faqs} breadcrumbs={crumbs} pageType={fm.pageType}>
+  <article class="mx-auto max-w-3xl">
+    <Breadcrumbs crumbs={crumbs} />
+    <p class="mb-2 text-xs font-semibold uppercase tracking-widest text-brand-600">{cleanLabel(fm.cluster, displayVars)} / {fm.pageType}</p>
+    <h1 class="mb-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{fm.h1}</h1>
+    <MarkdownContent content={content} />
+  </article>
+</BaseLayout>

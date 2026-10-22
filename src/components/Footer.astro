@@ -1,0 +1,37 @@
+---
+import { site, footerNav, cities } from '../config/site';
+
+const year = new Date().getFullYear();
+---
+<footer class="mt-16 border-t border-slate-200 bg-slate-50">
+  <div class="mx-auto max-w-6xl px-4 py-12">
+    <div class="grid gap-10 md:grid-cols-5">
+      <div>
+        <p class="text-base font-bold text-brand-800">{site.name}</p>
+        <p class="mt-2 text-sm text-slate-600">{site.tagline}</p>
+        <p class="mt-3 text-sm text-slate-500">{site.address}</p>
+        <p class="mt-1 text-sm text-slate-500">{site.phone}</p>
+        <p class="text-sm text-slate-500">{site.email}</p>
+      </div>
+      {footerNav.map((col) => (
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">{col.title}</p>
+          <ul class="mt-3 space-y-2 text-sm">
+            {col.links.map((link) => (
+              <li><a href={link.href} class="text-slate-600 hover:text-brand-700">{link.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <div class="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-6 text-sm text-slate-500">
+      <p>&copy; {year} {site.name}. All rights reserved.</p>
+      <p>
+        Serving:
+        {cities.map((c, i) => (
+          <>{i > 0 && ', '}<a href={`/ca-firm-in-${c.slug}`} class="hover:text-brand-700">{c.name}</a></>
+        ))}
+      </p>
+    </div>
+  </div>
+</footer>

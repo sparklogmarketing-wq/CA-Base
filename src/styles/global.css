@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-brand-50: #eef4ff;
+  --color-brand-100: #dae5ff;
+  --color-brand-200: #bdd0ff;
+  --color-brand-300: #90b1ff;
+  --color-brand-400: #5c85fc;
+  --color-brand-500: #365ff5;
+  --color-brand-600: #203fe8;
+  --color-brand-700: #1a30d0;
+  --color-brand-800: #1c2ca8;
+  --color-brand-900: #1d2b85;
+  --color-brand-950: #161d51;
+  --color-accent-400: #f0b429;
+  --color-accent-500: #e39d0f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
