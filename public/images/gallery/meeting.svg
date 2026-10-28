@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Team meeting around a conference table">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a30d0"/>
+      <stop offset="1" stop-color="#5c85fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <ellipse cx="400" cy="360" rx="270" ry="80" fill="#ffffff" opacity="0.25"/>
+  <rect x="150" y="340" width="500" height="26" rx="13" fill="#ffffff" opacity="0.85"/>
+  <rect x="215" y="366" width="24" height="90" fill="#ffffff" opacity="0.5"/>
+  <rect x="560" y="366" width="24" height="90" fill="#ffffff" opacity="0.5"/>
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="220" cy="250" r="30"/>
+    <path d="M160 355c0-38 27-62 60-62s60 24 60 62z"/>
+    <circle cx="400" cy="230" r="34"/>
+    <path d="M335 345c0-42 29-68 65-68s65 26 65 68z"/>
+    <circle cx="580" cy="250" r="30"/>
+    <path d="M520 355c0-38 27-62 60-62s60 24 60 62z"/>
+  </g>
+  <g fill="#f0b429">
+    <rect x="370" y="300" width="60" height="8" rx="4"/>
+    <rect x="382" y="284" width="36" height="8" rx="4" opacity="0.7"/>
+  </g>
+  <rect x="330" y="452" width="140" height="12" rx="6" fill="#ffffff" opacity="0.35"/>
+</svg>

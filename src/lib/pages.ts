@@ -25,6 +25,7 @@ export interface PageFrontmatter {
   h1: string;
   links: PageLink[];
   faqs: PageFaq[];
+  layout?: string;
   isCityTemplate?: boolean;
 }
 
@@ -76,6 +77,17 @@ export function fillPage(page: Page, displayVars: Record<string, string>, slugVa
 /** Fill tokens inside markdown link targets with URL-safe vars, leaving prose for the display pass. */
 function fillHrefs(content: string, hrefVars: Record<string, string>): string {
   return content.replace(/\]\(([^)\s]*)\)/g, (m, href: string) => `](${fill(href, hrefVars)})`);
+}
+
+/**
+ * Remove the duplicated FAQ prose section from a markdown body.
+ * The same questions are rendered interactively from frontmatter `faqs`.
+ */
+export function stripFaqSection(content: string): string {
+  return content
+    .replace(/\n## Frequently Asked Questions[\s\S]*?(?=\n## |$)/, '\n')
+    .replace(/\n## FAQs\n[\s\S]*?(?=\n## |$)/, '\n')
+    .trim();
 }
 
 /** Strip {tokens} for display contexts (nav labels, breadcrumbs). */

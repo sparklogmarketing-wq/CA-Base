@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 90" role="img" aria-label="BlueOrbit logo">
+  <circle cx="45" cy="45" r="24" fill="none" stroke="#2563eb" stroke-width="7"/>
+  <circle cx="65" cy="25" r="7" fill="#2563eb"/>
+  <text x="88" y="54" font-family="Arial, sans-serif" font-size="23" font-weight="bold" fill="#2563eb" letter-spacing="0.5">BlueOrbit</text>
+  <text x="88" y="72" font-family="Arial, sans-serif" font-size="12" fill="#64748b" letter-spacing="3">TECHNOLOGIES</text>
+</svg>

@@ -20,3 +20,33 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Infinite marquee (used by gallery + partner logo strips) */
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+.marquee .marquee-track {
+  animation: marquee-left var(--marquee-duration, 40s) linear infinite;
+  will-change: transform;
+}
+.marquee[data-direction='right'] .marquee-track {
+  animation-name: marquee-right;
+}
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+.marquee {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+.marquee .marquee-track {
+    animation: none;
+  }
+}

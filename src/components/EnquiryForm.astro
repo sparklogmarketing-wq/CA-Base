@@ -1,0 +1,145 @@
+---
+import { site } from '../config/site';
+
+const services = [
+  'Statutory / Tax / Internal Audit',
+  'Income Tax (ITR, TDS, notices)',
+  'GST (registration, returns, notices)',
+  'Accounting & Bookkeeping',
+  'Payroll & Statutory Compliance',
+  'Company / LLP / OPC Registration',
+  'Virtual CFO & Advisory',
+  'ROC / Corporate Secretarial',
+  'Other',
+];
+
+const entities = [
+  'Private Limited Company',
+  'Limited Liability Partnership (LLP)',
+  'Partnership Firm',
+  'Proprietorship',
+  'Startup / DPIIT-registered',
+  'Individual / Salaried',
+  'NRI',
+  'Trust / Society / NGO',
+  'Other',
+];
+---
+
+<form
+  id="enquiry-form"
+  class="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8"
+  data-email={site.email}
+>
+  <p class="text-lg font-bold text-slate-900">Send us your requirement</p>
+  <p class="mt-1 text-sm text-slate-600">
+    Fill in the details below and we will respond with a clear scope and fee proposal.
+  </p>
+
+  <div class="mt-6 grid gap-5 sm:grid-cols-2">
+    <div>
+      <label for="ef-name" class="mb-1.5 block text-sm font-semibold text-slate-700">Full name <span class="text-brand-600">*</span></label>
+      <input
+        id="ef-name"
+        name="name"
+        type="text"
+        required
+        autocomplete="name"
+        placeholder="Your name"
+        class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
+      />
+    </div>
+    <div>
+      <label for="ef-phone" class="mb-1.5 block text-sm font-semibold text-slate-700">Phone</label>
+      <input
+        id="ef-phone"
+        name="phone"
+        type="tel"
+        autocomplete="tel"
+        placeholder="+91 ..."
+        class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
+      />
+    </div>
+    <div>
+      <label for="ef-email" class="mb-1.5 block text-sm font-semibold text-slate-700">Email <span class="text-brand-600">*</span></label>
+      <input
+        id="ef-email"
+        name="email"
+        type="email"
+        required
+        autocomplete="email"
+        placeholder="you@company.com"
+        class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
+      />
+    </div>
+    <div>
+      <label for="ef-entity" class="mb-1.5 block text-sm font-semibold text-slate-700">Entity type</label>
+      <select
+        id="ef-entity"
+        name="entityType"
+        class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-800 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
+      >
+        {entities.map((e) => <option value={e}>{e}</option>)}
+      </select>
+    </div>
+    <div class="sm:col-span-2">
+      <label for="ef-service" class="mb-1.5 block text-sm font-semibold text-slate-700">Service needed <span class="text-brand-600">*</span></label>
+      <select
+        id="ef-service"
+        name="service"
+        required
+        class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-800 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
+      >
+        {services.map((s) => <option value={s}>{s}</option>)}
+      </select>
+    </div>
+    <div class="sm:col-span-2">
+      <label for="ef-message" class="mb-1.5 block text-sm font-semibold text-slate-700">Your requirement <span class="text-brand-600">*</span></label>
+      <textarea
+        id="ef-message"
+        name="message"
+        rows="4"
+        required
+        placeholder="Briefly describe what you need, plus any deadlines involved..."
+        class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
+      ></textarea>
+    </div>
+  </div>
+
+  <div class="mt-6 flex flex-wrap items-center gap-4">
+    <button
+      type="submit"
+      class="rounded-md bg-brand-600 px-6 py-2.5 font-semibold text-white shadow-sm transition-colors hover:bg-brand-700"
+    >
+      Send enquiry
+    </button>
+    <p class="text-xs text-slate-500">
+      Opens your email app with the enquiry prefilled, addressed to {site.email}.
+    </p>
+  </div>
+</form>
+
+<script is:inline>
+  (function () {
+    var form = document.getElementById('enquiry-form');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var email = form.getAttribute('data-email') || '';
+      var subject = 'Consultation enquiry — ' + data.get('service');
+      var body = [
+        'Name: ' + data.get('name'),
+        'Phone: ' + (data.get('phone') || '—'),
+        'Email: ' + data.get('email'),
+        'Entity type: ' + data.get('entityType'),
+        'Service needed: ' + data.get('service'),
+        '',
+        'Requirement:',
+        data.get('message'),
+      ].join('\n');
+      window.location.href =
+        'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  })();
+</script>

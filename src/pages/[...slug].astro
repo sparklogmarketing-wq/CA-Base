@@ -2,7 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import MarkdownContent from '../components/MarkdownContent.astro';
-import { pages, fill, fillPage, cleanLabel, type Page } from '../lib/pages';
+import FaqAccordion from '../components/FaqAccordion.astro';
+import CtaBanner from '../components/CtaBanner.astro';
+import EnquiryForm from '../components/EnquiryForm.astro';
+import Hero from '../components/home/Hero.astro';
+import StatsStrip from '../components/home/StatsStrip.astro';
+import ServiceCards from '../components/home/ServiceCards.astro';
+import GalleryMarquee from '../components/home/GalleryMarquee.astro';
+import PartnersMarquee from '../components/home/PartnersMarquee.astro';
+import { pages, fill, fillPage, cleanLabel, stripFaqSection, type Page } from '../lib/pages';
 import { cities, placeholders, clusterHubs } from '../config/site';
 
 export function getStaticPaths() {
@@ -41,6 +49,10 @@ const { page, displayVars, slugVars, city } = Astro.props as Props;
 const resolved = fillPage(page, displayVars, slugVars);
 const { fm, content } = resolved;
 
+const layout = fm.layout ?? 'article';
+const isHome = layout === 'home';
+const isConversion = layout === 'conversion';
+
 const crumbs = [{ label: 'Home', href: '/' }];
 if (city) {
   crumbs.push({ label: `CA Firm in ${city.name}`, href: `/ca-firm-in-${city.slug}` });
@@ -57,12 +69,41 @@ if (city) {
 crumbs.push({ label: cleanLabel(fm.pageName, displayVars) || fm.pageName, href: fm.slug });
 
 const path = Astro.url.pathname === '' ? '/' : Astro.url.pathname;
+
+// FAQ prose is duplicated with the frontmatter list; render the accordion once instead.
+const bodyContent = stripFaqSection(content);
 ---
-<BaseLayout title={fm.title} description={fm.description} path={path} faqs={fm.faqs} breadcrumbs={crumbs} pageType={fm.pageType}>
-  <article class="mx-auto max-w-3xl">
-    <Breadcrumbs crumbs={crumbs} />
-    <p class="mb-2 text-xs font-semibold uppercase tracking-widest text-brand-600">{cleanLabel(fm.cluster, displayVars)} / {fm.pageType}</p>
-    <h1 class="mb-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{fm.h1}</h1>
-    <MarkdownContent content={content} />
-  </article>
+<BaseLayout
+  title={fm.title}
+  description={fm.description}
+  path={path}
+  faqs={fm.faqs}
+  breadcrumbs={crumbs}
+  pageType={fm.pageType}
+  wide={isHome}
+>
+  {isHome && (
+    <>
+      <Hero h1={fm.h1} description={fm.description} />
+      <StatsStrip />
+      <ServiceCards />
+      <GalleryMarquee />
+      <PartnersMarquee />
+      <div class="mx-auto max-w-6xl px-4 pb-16">
+        <FaqAccordion faqs={fm.faqs} />
+        <CtaBanner city={displayVars.city} />
+      </div>
+    </>
+  )}
+  {!isHome && (
+    <article class="mx-auto max-w-3xl">
+      {!isConversion && <Breadcrumbs crumbs={crumbs} />}
+      <p class="mb-2 text-xs font-semibold uppercase tracking-widest text-brand-600">{cleanLabel(fm.cluster, displayVars)} / {fm.pageType}</p>
+      <h1 class="mb-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{fm.h1}</h1>
+      {isConversion && <EnquiryForm />}
+      <MarkdownContent content={bodyContent} />
+      <FaqAccordion faqs={fm.faqs} />
+      <CtaBanner city={displayVars.city} />
+    </article>
+  )}
 </BaseLayout>

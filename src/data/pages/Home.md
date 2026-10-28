@@ -1,6 +1,7 @@
 ---
 slug: "/"
 cluster: "Core"
+layout: "home"
 pageName: "Home"
 pageType: "Home"
 intent: "Commercial"

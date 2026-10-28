@@ -1,0 +1,27 @@
+---
+interface Props {
+  /** Visual scroll direction of the content. */
+  direction?: 'left' | 'right';
+  /** Seconds for one full loop across both track halves. */
+  speed?: number;
+  /** Accessible label for the region. */
+  label?: string;
+  class?: string;
+}
+
+const { direction = 'left', speed = 40, label = '', class: className = '' } = Astro.props;
+const items = await Astro.slots.render('default');
+---
+
+<div
+  class:list={['marquee relative overflow-hidden', className]}
+  data-direction={direction}
+  style={`--marquee-duration:${speed}s`}
+  role="region"
+  aria-label={label}
+>
+  <div class="marquee-track flex w-max">
+    <div class="flex shrink-0 items-center"><Fragment set:html={items} /></div>
+    <div class="flex shrink-0 items-center" aria-hidden="true" set:html={items} />
+  </div>
+</div>

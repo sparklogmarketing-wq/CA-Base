@@ -16,9 +16,11 @@ interface Props {
   faqs?: { q: string; a: string }[];
   breadcrumbs?: Crumb[];
   pageType?: string;
+  /** Skip the default max-width container so the page can go full-bleed (home). */
+  wide?: boolean;
 }
 
-const { title, description, path, faqs = [], breadcrumbs = [], pageType = 'WebPage' } = Astro.props;
+const { title, description, path, faqs = [], breadcrumbs = [], pageType = 'WebPage', wide = false } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -31,7 +33,7 @@ const { title, description, path, faqs = [], breadcrumbs = [], pageType = 'WebPa
   </head>
   <body class="flex min-h-screen flex-col bg-white font-sans text-slate-800 antialiased">
     <Header />
-    <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-10">
+    <main class:list={['w-full flex-1', !wide && 'mx-auto max-w-6xl px-4 py-10']}>
       <slot />
     </main>
     <Footer />

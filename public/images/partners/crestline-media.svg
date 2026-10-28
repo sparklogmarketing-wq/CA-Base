@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 90" role="img" aria-label="Crestline Media logo">
+  <path d="M22 52c8-14 16-14 24 0s16 14 24 0" fill="none" stroke="#e11d48" stroke-width="6" stroke-linecap="round"/>
+  <path d="M22 36c8-14 16-14 24 0s16 14 24 0" fill="none" stroke="#e11d48" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+  <text x="88" y="54" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#e11d48" letter-spacing="0.5">Crestline</text>
+  <text x="88" y="72" font-family="Arial, sans-serif" font-size="12" fill="#64748b" letter-spacing="3">MEDIA</text>
+</svg>

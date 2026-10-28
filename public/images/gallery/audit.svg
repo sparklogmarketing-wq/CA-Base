@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Audit working papers with magnifying glass">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c2ca8"/>
+      <stop offset="1" stop-color="#90b1ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <g transform="rotate(-4 400 250)">
+    <rect x="250" y="70" width="300" height="380" rx="16" fill="#ffffff" opacity="0.96"/>
+    <rect x="290" y="120" width="180" height="14" rx="7" fill="#1a30d0" opacity="0.8"/>
+    <rect x="290" y="160" width="220" height="10" rx="5" fill="#94a3b8"/>
+    <rect x="290" y="190" width="200" height="10" rx="5" fill="#94a3b8"/>
+    <rect x="290" y="220" width="220" height="10" rx="5" fill="#94a3b8"/>
+    <rect x="290" y="250" width="160" height="10" rx="5" fill="#94a3b8"/>
+    <g stroke="#1a30d0" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M292 300l12 12 22-24"/>
+      <path d="M292 340l12 12 22-24"/>
+      <path d="M292 380l12 12 22-24"/>
+    </g>
+  </g>
+  <g transform="rotate(10 560 320)">
+    <circle cx="545" cy="300" r="80" fill="none" stroke="#f0b429" stroke-width="22"/>
+    <rect x="598" y="356" width="90" height="30" rx="15" transform="rotate(45 598 356)" fill="#f0b429"/>
+    <circle cx="545" cy="300" r="58" fill="#ffffff" opacity="0.25"/>
+  </g>
+</svg>

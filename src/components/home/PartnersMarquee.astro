@@ -1,0 +1,40 @@
+---
+import Marquee from '../Marquee.astro';
+
+const partners = [
+  { src: '/images/partners/northwind.svg', alt: 'Northwind Traders' },
+  { src: '/images/partners/blueorbit.svg', alt: 'BlueOrbit Technologies' },
+  { src: '/images/partners/zenith-capital.svg', alt: 'Zenith Capital' },
+  { src: '/images/partners/lumina-tech.svg', alt: 'Lumina Tech' },
+  { src: '/images/partners/atlas-logistics.svg', alt: 'Atlas Logistics' },
+  { src: '/images/partners/crestline-media.svg', alt: 'Crestline Media' },
+  { src: '/images/partners/vertex-labs.svg', alt: 'Vertex Labs' },
+  { src: '/images/partners/acme-industries.svg', alt: 'Acme Industries' },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-6xl px-4">
+    <p class="text-xs font-semibold uppercase tracking-widest text-brand-600">Our partners</p>
+    <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Trusted by growing businesses</h2>
+    <p class="mt-3 max-w-2xl text-slate-600">
+      We work alongside companies across IT, e-commerce, manufacturing, real estate and financial services — from first filings to funded scale.
+    </p>
+  </div>
+  <div class="mt-10">
+    <Marquee direction="left" speed={40} label="Our partners and clients">
+      {partners.map((partner) => (
+        <span class="mx-3 inline-flex items-center rounded-xl border border-slate-200 bg-white px-6 py-4 shadow-sm sm:mx-4">
+          <img
+            src={partner.src}
+            alt={partner.alt}
+            width="260"
+            height="90"
+            loading="lazy"
+            class="h-14 w-auto grayscale transition-all duration-300 hover:grayscale-0"
+          />
+        </span>
+      ))}
+    </Marquee>
+  </div>
+</section>

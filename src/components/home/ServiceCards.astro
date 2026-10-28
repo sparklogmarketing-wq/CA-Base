@@ -1,0 +1,79 @@
+---
+import { serviceIcons } from '../../lib/icons';
+
+const services = [
+  {
+    title: 'Audit & Assurance',
+    blurb: 'Statutory, tax and internal audits with documented programmes.',
+    href: '/statutory-audit',
+    icon: 'shield',
+  },
+  {
+    title: 'Income Tax',
+    blurb: 'ITR filing, tax planning, TDS and assessment representation.',
+    href: '/income-tax',
+    icon: 'calculator',
+  },
+  {
+    title: 'GST',
+    blurb: 'Registration, GSTR filing, ITC reconciliation and notices.',
+    href: '/gst-services',
+    icon: 'receipt',
+  },
+  {
+    title: 'Accounting & Bookkeeping',
+    blurb: 'Monthly books, MIS reporting and finalisation on your stack.',
+    href: '/accounting-outsourcing',
+    icon: 'book',
+  },
+  {
+    title: 'Payroll',
+    blurb: 'Payroll processing with PF, ESI and professional tax.',
+    href: '/payroll-services',
+    icon: 'users',
+  },
+  {
+    title: 'Company Registration',
+    blurb: 'Companies, LLPs, OPCs, MSME/Udyam and DPIIT recognition.',
+    href: '/company-registration',
+    icon: 'building',
+  },
+  {
+    title: 'Virtual CFO',
+    blurb: 'MIS, budgeting, fundraising and board reporting.',
+    href: '/cfo-services',
+    icon: 'briefcase',
+  },
+  {
+    title: 'ROC & Compliance',
+    blurb: 'AOC-4, MGT-7, statutory registers and event-based filings.',
+    href: '/roc-compliance',
+    icon: 'doc-check',
+  },
+];
+---
+
+<section id="services" class="mx-auto max-w-6xl scroll-mt-24 px-4 py-16 sm:py-20">
+  <p class="text-xs font-semibold uppercase tracking-widest text-brand-600">What we do</p>
+  <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Full-service CA practice under one roof</h2>
+  <p class="mt-3 max-w-2xl text-slate-600">
+    One firm for audit, direct tax, GST, payroll, ROC compliance and CFO-level advisory — delivered on defined timelines with qualified-chartered-accountant review.
+  </p>
+  <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    {services.map((service) => (
+      <a
+        href={service.href}
+        class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-md"
+      >
+        <span class="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-brand-50 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
+          <svg class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" set:html={serviceIcons[service.icon]} />
+        </span>
+        <h3 class="mt-4 font-semibold text-slate-900 group-hover:text-brand-700">{service.title}</h3>
+        <p class="mt-1.5 text-sm leading-relaxed text-slate-600">{service.blurb}</p>
+        <span class="mt-3 inline-block text-sm font-semibold text-brand-600 group-hover:text-brand-700">
+          Learn more <span aria-hidden="true">&rarr;</span>
+        </span>
+      </a>
+    ))}
+  </div>
+</section>

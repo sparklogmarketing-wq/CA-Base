@@ -1,6 +1,7 @@
 ---
 slug: "/apply-online"
 cluster: "Core"
+layout: "conversion"
 pageName: "Apply Online"
 pageType: "Conversion"
 intent: "Commercial"

@@ -1,6 +1,7 @@
 ---
 slug: "/contact-us"
 cluster: "Core"
+layout: "conversion"
 pageName: "Contact Us"
 pageType: "Conversion"
 intent: "Commercial"

@@ -1,0 +1,38 @@
+---
+import Marquee from '../Marquee.astro';
+
+const images = [
+  { src: '/images/gallery/office.svg', alt: 'Our office in Bangalore' },
+  { src: '/images/gallery/meeting.svg', alt: 'Client meeting in progress' },
+  { src: '/images/gallery/audit.svg', alt: 'Audit working papers under review' },
+  { src: '/images/gallery/tax.svg', alt: 'Tax computation work' },
+  { src: '/images/gallery/gst.svg', alt: 'GST invoice and filing support' },
+  { src: '/images/gallery/books.svg', alt: 'Accounting ledgers and books of account' },
+  { src: '/images/gallery/payroll.svg', alt: 'Payroll processing and salary slips' },
+  { src: '/images/gallery/advisory.svg', alt: 'Financial advisory and growth planning' },
+];
+---
+
+<section class="bg-slate-50 py-16 sm:py-20">
+  <div class="mx-auto max-w-6xl px-4">
+    <p class="text-xs font-semibold uppercase tracking-widest text-brand-600">Inside our firm</p>
+    <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">The people and practice behind your filings</h2>
+    <p class="mt-3 max-w-2xl text-slate-600">
+      A partner-supervised team working across audit, tax, GST, payroll and advisory — with documented programmes and defined timelines on every engagement.
+    </p>
+  </div>
+  <div class="mt-10">
+    <Marquee direction="right" speed={55} label="Photo gallery of our firm">
+      {images.map((image) => (
+        <img
+          src={image.src}
+          alt={image.alt}
+          width="800"
+          height="500"
+          loading="lazy"
+          class="mx-3 h-44 w-72 rounded-xl object-cover shadow-md sm:mx-4 sm:h-52 sm:w-80"
+        />
+      ))}
+    </Marquee>
+  </div>
+</section>

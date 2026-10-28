@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 90" role="img" aria-label="Northwind Traders logo">
+  <g transform="translate(24,45)">
+    <path d="M0-26L8 0 0 26-8 0z" fill="#0ea5e9"/>
+    <path d="M-26 0L0-8 26 0 0 8z" fill="#0ea5e9" opacity="0.55"/>
+  </g>
+  <text x="66" y="54" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#0ea5e9" letter-spacing="0.5">Northwind</text>
+  <text x="66" y="72" font-family="Arial, sans-serif" font-size="12" fill="#64748b" letter-spacing="3">TRADERS</text>
+</svg>
