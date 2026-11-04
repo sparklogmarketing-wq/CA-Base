@@ -1,6 +1,6 @@
 # CA Website
 
-Static SEO site for a chartered accountant firm, built with **Astro 5 + React (react-markdown) + Tailwind CSS v4**.
+Static SEO site for a chartered accountant firm, built with **Astro 5 + React (react-markdown) + Tailwind CSS v4**
 
 Every page is a markdown file in `src/data/pages/` (frontmatter + body), rendered by a single dynamic route. 104 routes are generated at build time - including per-city pages (Bangalore seed).
 
