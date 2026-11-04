@@ -40,6 +40,12 @@ faqs:
     a: "A private limited company needs at least two directors and two shareholders; one person can hold both roles. A One Person Company needs only one member and nominee, while an LLP needs at least two designated partners."
   - q: "Is a Digital Signature Certificate mandatory?"
     a: "Yes. All incorporation filings are made online on the registry portal, so every subscriber and witness must hold a valid DSC. We arrange Class 3 DSCs as part of the engagement."
+  - q: "How does a One Person Company change its nominee or convert?"
+    a: "A change in the member or nominee is reported in Form INC-4 within 30 days of the change, backed by the new nominee's consent and board resolutions. Conversion of the OPC into a private limited or public company is applied for in Form INC-6 — with the earlier capital and turnover restrictions removed, conversion is now a strategic choice rather than a compulsion."
+  - q: "How is the registered office notified or shifted?"
+    a: "The situation of the registered office is intimated in Form INC-22 within 30 days of incorporation or of any change, supported by proof of ownership or occupancy and a utility bill. Moving to another state or outside the registrar's jurisdiction additionally needs Regional Director approval in Form INC-23, which our corporate secretarial team handles end to end."
+  - q: "Which forms handle capital, name and management changes after incorporation?"
+    a: "Alterations of share capital go in Form SH-7, conversions between company classes in Form INC-27, and the appointment or change of a managing director, whole-time director or manager is returned in Form MR-1 alongside DIR-12. A company name change begins with a RUN reservation and completes with the special resolution and altered memorandum filed in MGT-14."
 ---
 
 > Company registration in India is the legal process of incorporating a business entity — most commonly a private limited company, LLP or OPC — under the Companies Act 2013 or the LLP Act 2008 through the registry's SPICe+ digital filing, giving the venture a separate legal identity, limited liability and perpetual succession from day one.
@@ -115,3 +121,15 @@ A private limited company needs at least two directors and two shareholders; one
 ### Is a Digital Signature Certificate mandatory?
 
 Yes. All incorporation filings are made online on the registry portal, so every subscriber and witness must hold a valid DSC. We arrange Class 3 DSCs as part of the engagement.
+
+### How does a One Person Company change its nominee or convert?
+
+A change in the member or nominee is reported in Form INC-4 within 30 days of the change, backed by the new nominee's consent and board resolutions. Conversion of the OPC into a private limited or public company is applied for in Form INC-6 — with the earlier capital and turnover restrictions removed, conversion is now a strategic choice rather than a compulsion.
+
+### How is the registered office notified or shifted?
+
+The situation of the registered office is intimated in Form INC-22 within 30 days of incorporation or of any change, supported by proof of ownership or occupancy and a utility bill. Moving to another state or outside the registrar's jurisdiction additionally needs Regional Director approval in Form INC-23, which our corporate secretarial team handles end to end.
+
+### Which forms handle capital, name and management changes after incorporation?
+
+Alterations of share capital go in Form SH-7, conversions between company classes in Form INC-27, and the appointment or change of a managing director, whole-time director or manager is returned in Form MR-1 alongside DIR-12. A company name change begins with a RUN reservation and completes with the special resolution and altered memorandum filed in MGT-14.

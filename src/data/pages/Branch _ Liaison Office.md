@@ -39,6 +39,8 @@ faqs:
     a: "Yes. Branch office profits attributable to {country} operations are taxed at the rates applicable to foreign companies, which are higher than domestic rates. A liaison office confined to representational activities generally has no taxable income but must still file its income tax return."
   - q: "Can a branch office do retail trading?"
     a: "No. Branch offices of foreign companies cannot undertake retail trading activities of any kind in {country}. Retail entry requires a subsidiary or joint venture structure, subject to the sectoral conditions for FDI in multi-brand retail."
+  - q: "What ongoing ROC filings does a foreign company's Indian presence carry?"
+    a: "After the initial FC-1, changes to the parent's charter or to the Indian representatives are reported in FC-2. FC-3 files the annual accounts along with the list of all principal places of business, and FC-4 is the annual return carrying representative particulars. The AD-bank annual performance report runs in parallel for branch and liaison offices."
 ---
 
 > Branch office registration in {country} is the approval process under FEMA 1999 by which a foreign company establishes a place of business in {country} through an AD Category-I bank. A branch office may earn income from permitted activities, while a liaison office acts purely as a representative channel and cannot undertake any commercial activity.
@@ -108,6 +110,10 @@ Yes. Branch office profits attributable to {country} operations are taxed at the
 ### Can a branch office do retail trading?
 
 No. Branch offices of foreign companies cannot undertake retail trading activities of any kind in {country}. Retail entry requires a subsidiary or joint venture structure, subject to the sectoral conditions for FDI in multi-brand retail.
+
+### What ongoing ROC filings does a foreign company's Indian presence carry?
+
+After the initial FC-1, changes to the parent's charter or to the Indian representatives are reported in FC-2. FC-3 files the annual accounts along with the list of all principal places of business, and FC-4 is the annual return carrying representative particulars. The AD-bank annual performance report runs in parallel for branch and liaison offices.
 
 ## Related Services
 

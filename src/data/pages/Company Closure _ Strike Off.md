@@ -37,6 +37,8 @@ faqs:
     a: "Typically four to six months from filing, depending on RoC scrutiny and the public objection window. Backlog filings, pending charges or uncancelled registrations extend the timeline."
   - q: "Is an LLP closed the same way?"
     a: "No. LLPs are struck off under Form 24 of the LLP Rules, a similar fast track route requiring partner consent, up-to-date statements of account and solvency, and clearance of any outstanding filings."
+  - q: "Is strike off the only way to close an inactive company?"
+    a: "No. Where the company may be needed again — holding land, licences or a brand — dormant company status is the lighter alternative: MSC-1 obtains the status, MSC-3 is the annual return, and MSC-4 restores active status. Strike off through STK-2 remains the permanent exit when the entity will never operate again."
 ---
 
 > A private limited company strike off is a registrar-led exit under Section 248 of the Companies Act, 2013, by which the Registrar of Companies removes the name of a defunct or non-operational company from the register, dissolving the entity without the cost and duration of winding up proceedings.
@@ -116,6 +118,10 @@ Typically four to six months from filing, depending on RoC scrutiny and the publ
 ### Is an LLP closed the same way?
 
 No. LLPs are struck off under Form 24 of the LLP Rules, a similar fast track route requiring partner consent, up-to-date statements of account and solvency, and clearance of any outstanding filings.
+
+### Is strike off the only way to close an inactive company?
+
+No. Where the company may be needed again — holding land, licences or a brand — dormant company status is the lighter alternative: MSC-1 obtains the status, MSC-3 is the annual return, and MSC-4 restores active status. Strike off through STK-2 remains the permanent exit when the entity will never operate again.
 
 ## Related Services
 

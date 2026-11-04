@@ -42,6 +42,8 @@ faqs:
     a: "Use the official portals maintained by the income tax department, the GST network and {corporate_affairs_authority}. Versions change, so download at the time of filing rather than storing old copies."
   - q: "Can your team prepare and file these forms for us?"
     a: "Yes. {brand} manages end-to-end filing calendars across GST, income tax, TDS, ROC and payroll, with review checkpoints before every submission. Contact us for a scope-based quote."
+  - q: "Which forms cover prospectuses and buy-backs?"
+    a: "LEAP-1 files the prospectus with the Registrar, PAS-2 carries the information memorandum and PAS-7 reports pending share warrants. The buy-back cycle runs through SH-8 (letter of offer), SH-9 (declaration of solvency) and SH-11 (return on completion). These capital-market filings sit inside our IPO advisory — see [IPO and SME IPO](/ipo-sme-ipo)."
 ---
 
 > Compliance forms and checklists are the prescribed statutory formats — GST returns, income tax returns, TDS statements and ROC filings — through which Indian businesses report activity to regulators, together with the pre-submission checks that ensure each form is complete, accurate and filed within the prescribed time.
@@ -99,6 +101,18 @@ Private companies carry a fixed annual set under the Companies Act 2013, filed o
 - **INC-20A** — declaration before commencement of business
 - **PAS-3** — return of allotment
 - **CHG-1** — registration of charges created on company assets
+- **CHG-4 / CHG-8 / CHG-9** — satisfaction of charges, condonation of delay and charges on debentures
+- **SH-7** — alteration of share capital
+- **INC-27** — conversion between company classes
+- **MR-1** — return of managing director, whole-time director or manager appointment
+- **DIR-6 / DIR-11 / DIR-12** — director particulars, resignation and appointment or cessation
+- **MSC-1 / MSC-3 / MSC-4** — dormant status application, annual return and reactivation
+- **INC-22A** — one-time ACTIVE tagging of the registered office and directors
+- **GNL-2 / GNL-4** — general document submissions and addenda to filed forms
+- **LLP Forms 5, 15 and 24** — LLP name change, registered office change and striking off
+- **DPT-4** — statement of deposits existing on the commencement of the Act
+- **NDH-1 / NDH-2 / NDH-3 / NDH-4** — Nidhi statutory compliance return, extension of time, half-yearly return and Nidhi declaration
+- **FC-2 / FC-3 / FC-4** — foreign company alteration, annual accounts and annual return
 
 ## Payroll and Labour Law Filings
 
@@ -136,3 +150,6 @@ Use the official portals maintained by the income tax department, the GST networ
 
 ### Can your team prepare and file these forms for us?
 Yes. {brand} manages end-to-end filing calendars across GST, income tax, TDS, ROC and payroll, with review checkpoints before every submission. Contact us for a scope-based quote.
+
+### Which forms cover prospectuses and buy-backs?
+LEAP-1 files the prospectus with the Registrar, PAS-2 carries the information memorandum and PAS-7 reports pending share warrants. The buy-back cycle runs through SH-8 (letter of offer), SH-9 (declaration of solvency) and SH-11 (return on completion). These capital-market filings sit inside our IPO advisory — see [IPO and SME IPO](/ipo-sme-ipo).

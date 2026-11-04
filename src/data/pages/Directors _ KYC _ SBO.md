@@ -40,6 +40,12 @@ faqs:
     a: "Yes, wherever a significant beneficial owner is identified. The company files BEN-2 within 30 days of receiving the BEN-1 declaration and maintains a register of significant beneficial owners."
   - q: "Do designated partners of LLPs need DIR-3 KYC?"
     a: "Yes. Every designated partner holding a DIN must complete annual KYC, and the LLP's Form 11 annual return carries partner details, so the two records must stay consistent."
+  - q: "How are changes in a director's particulars reported?"
+    a: "The director files Form DIR-6 within 30 days of any change in name, address or other particulars registered against the DIN, with supporting documents. The company, in turn, intimates the DINs of all its directors to the Registrar in Form DIR-3C within 30 days of appointment, and reports the appointment or cessation itself in DIR-12."
+  - q: "What forms apply when a director resigns, is disqualified, or closes a DIN?"
+    a: "A resigning director files DIR-11 within 30 days, while the company files DIR-12 recording the cessation. Where directors stand disqualified for filing defaults, the company reports them in DIR-9 and the disqualified director can seek restoration through DIR-10. A DIN that is no longer needed is surrendered in DIR-5."
+  - q: "Do beneficial ownership rules apply to LLPs?"
+    a: "Yes. The significant beneficial owner regime extends to LLPs: the firm files Form BEN-2 with the Registrar for declarations under section 90, and Form 4D reports beneficial interest in contribution received by the LLP. The same 30-day windows that apply to companies apply here."
 ---
 
 > DIR-3 KYC filing is the annual verification every director and designated partner must complete for their Director Identification Number with the {corporate_affairs_authority} by 30 September each year. Missing it deactivates the DIN; alongside Section 90 beneficial ownership filings, it keeps a company's management and ownership records clean.
@@ -65,6 +71,22 @@ The teeth are in Section 90(6): rights attached to an unregistered SBO's interes
 ## DIR-12: Reporting Director Changes on Time
 
 Every appointment, cessation or change in a director's designation must reach the RoC in Form DIR-12 within 30 days under Section 170. A missed DIR-12 leaves MCA master data contradicting the register of members and board minutes — a defect banks, investors and auditors flag in diligence, and one that desynchronises the annual forms. The incoming director's DIN must be KYC-compliant before filing, which is why the two services travel together.
+
+## The DIN Form Set at a Glance
+
+Every DIN interaction has a dedicated form, and each side — the individual and the company — carries its own filings:
+
+| Form | Purpose | Filed by |
+|---|---|---|
+| DIR-3 | Allotment of a new DIN | Individual |
+| DIR-3 KYC / DIR-3 KYC-WEB | Annual KYC of every DIN holder | Individual |
+| DIR-3C | Intimation of the DINs of directors | Company |
+| DIR-6 | Change in the particulars of a director | Individual |
+| DIR-12 | Appointment, cessation or designation change | Company |
+| DIR-11 | Resignation of a director | Individual |
+| DIR-9 | Report of director disqualification | Company |
+| DIR-10 | Application for removal of disqualification | Individual |
+| DIR-5 | Surrender of a DIN no longer in use | Individual |
 
 ## LLP Filings: Form 11 and Partner KYC
 
@@ -103,6 +125,18 @@ Yes, wherever a significant beneficial owner is identified. The company files BE
 ### Do designated partners of LLPs need DIR-3 KYC?
 
 Yes. Every designated partner holding a DIN must complete annual KYC, and the LLP's Form 11 annual return carries partner details, so the two records must stay consistent.
+
+### How are changes in a director's particulars reported?
+
+The director files Form DIR-6 within 30 days of any change in name, address or other particulars registered against the DIN, with supporting documents. The company, in turn, intimates the DINs of all its directors to the Registrar in Form DIR-3C within 30 days of appointment, and reports the appointment or cessation itself in DIR-12.
+
+### What forms apply when a director resigns, is disqualified, or closes a DIN?
+
+A resigning director files DIR-11 within 30 days, while the company files DIR-12 recording the cessation. Where directors stand disqualified for filing defaults, the company reports them in DIR-9 and the disqualified director can seek restoration through DIR-10. A DIN that is no longer needed is surrendered in DIR-5.
+
+### Do beneficial ownership rules apply to LLPs?
+
+Yes. The significant beneficial owner regime extends to LLPs: the firm files Form BEN-2 with the Registrar for declarations under section 90, and Form 4D reports beneficial interest in contribution received by the LLP. The same 30-day windows that apply to companies apply here.
 
 ## Related Services
 

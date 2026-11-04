@@ -40,6 +40,16 @@ faqs:
     a: "Sections 92(5), 117 and 137 impose fines on the company and officers, plus Rs 100 per day additional fee on annual forms. Five years of defaults also disqualifies directors."
   - q: "Do LLPs file the same ROC forms?"
     a: "No. LLPs file Form 8, the statement of account and solvency, by 30 October and Form 11, the annual return, by 30 May, along with DIR-3 KYC for designated partners."
+  - q: "How are charges on company assets registered with the RoC?"
+    a: "A charge on assets other than debentures is filed in CHG-1 within 30 days of creation or modification, and charges on debentures go in CHG-9. Where the deadline is missed, the Regional Director can be moved to condone the delay in CHG-8. Once a secured debt is repaid, CHG-4 records the satisfaction of charge, and the appointment or cessation of a receiver or manager is reported in CHG-6. An unregistered charge is not protected against the liquidator or other creditors, so timeliness matters."
+  - q: "What is INC-22A ACTIVE tagging?"
+    a: "INC-22A, the Active Company Tagging Identities and Verification, is a one-time compliance recording the company's registered office with photographs and the particulars of its directors with digital signatures. Companies that skip it are marked ACTIVE-non-compliant and are blocked from filing key forms such as allotment and capital alteration filings. Late filers pay a fee of Rs 10,000."
+  - q: "Which forms track the auditor lifecycle?"
+    a: "ADT-1 files the appointment of the statutory auditor within 15 days of the general meeting, ADT-3 the auditor's resignation, and ADT-2 seeks approval for removal before the term ends; ADT-4 is the auditor's intimation to the central government where a company fails to appoint one. Companies requiring a cost audit appoint the cost auditor in CRA-2 and file the cost audit report in CRA-4."
+  - q: "What are the GNL forms used for?"
+    a: "GNL-1 carries applications to the Registrar where no dedicated form exists, GNL-2 is the general document submission route, GNL-3 discloses particulars of individuals charged under the officer-in-default clauses of section 2(60), and GNL-4 is the addendum to correct a filed form. Alongside these, CRL-1 reports layers of investment, MGT-3 notifies the location of a foreign register, MGT-6 files section 89 declarations and INC-28 intimates court or tribunal orders."
+  - q: "How does dormant company status work?"
+    a: "A company that intends to stay inactive can obtain dormant status instead of striking off: MSC-1 applies for the status, MSC-3 is the annual return of dormant companies, and MSC-4 applies to return to active status when operations resume. Dormant companies keep their identity at minimal cost and file only the light annual set."
 ---
 
 > ROC compliance services cover the recurring statutory filings a company or LLP makes with the Registrar of Companies under the Companies Act, 2013 and the LLP Act, 2008 — annual returns, financial statements, director KYC, deposit returns and event-based filings — plus the board meetings and statutory registers that keep the entity in good standing.
@@ -63,6 +73,20 @@ Missed dates trigger most penalties, so every engagement runs on a fixed annual 
 | Annual return | LLP Form 11 | LLPs | 30 May each year |
 
 One person companies are exempt from the AGM and file within 30 days of board approval; small companies and OPCs use the simplified MGT-7A and AOC-4(A). LLPs run on a separate cycle — our [LLP registration and compliance](/llp-registration) practice handles both.
+
+## Event-Based and Other MCA Forms We File
+
+Annual filings are only half the picture. Every corporate event has its own form, and {brand} prepares and files the full set on the {corporate_affairs_authority} portal:
+
+| Group | Forms | What they cover |
+|---|---|---|
+| Charges | CHG-1, CHG-4, CHG-6, CHG-8, CHG-9 | Creation or modification of charges, satisfaction, appointment or cessation of a receiver, condonation of delay by the Regional Director, and charges on debentures |
+| Auditor lifecycle | ADT-1, ADT-3, ADT-2, ADT-4, CRA-2, CRA-4 | Appointment, resignation, removal before term, central government intimation, cost auditor appointment and the cost audit report |
+| Approvals and applications | RD-1, ADJ, MR-2, GNL-1, INC-12, INC-18, INC-23, INC-24 | Regional Director applications and appeals, managerial remuneration approvals, applications to the Registrar, section 8 licences and conversions, inter-state registered office shifts and name changes |
+| Company status | INC-20A, INC-20, INC-22A, MSC-1, MSC-3, MSC-4 | Commencement of business, section 8 licence revocation, ACTIVE tagging and the dormant status lifecycle |
+| Investor and transaction filings | CRL-1, MGT-3, MGT-6, MGT-14, MGT-15, AOC-5, PAS-2, GNL-2, GNL-3, GNL-4, INC-28 | Layers of investment, foreign registers, section 89 declarations, board and general meeting resolutions, AGM reports, books-of-account locations, information memoranda, document submissions and court order notices |
+
+Forms outside this table — director KYC, beneficial ownership and name reservations — run through our [director KYC and SBO](/directors-kyc-sbo) practice and the [company registration hub](/company-registration).
 
 ## AGM and EGM Rules Under the Companies Act, 2013
 
@@ -110,6 +134,26 @@ Sections 92(5), 117 and 137 impose fines on the company and officers, plus Rs 10
 ### Do LLPs file the same ROC forms?
 
 No. LLPs file Form 8, the statement of account and solvency, by 30 October and Form 11, the annual return, by 30 May, along with DIR-3 KYC for designated partners.
+
+### How are charges on company assets registered with the RoC?
+
+A charge on assets other than debentures is filed in CHG-1 within 30 days of creation or modification, and charges on debentures go in CHG-9. Where the deadline is missed, the Regional Director can be moved to condone the delay in CHG-8. Once a secured debt is repaid, CHG-4 records the satisfaction of charge, and the appointment or cessation of a receiver or manager is reported in CHG-6. An unregistered charge is not protected against the liquidator or other creditors, so timeliness matters.
+
+### What is INC-22A ACTIVE tagging?
+
+INC-22A, the Active Company Tagging Identities and Verification, is a one-time compliance recording the company's registered office with photographs and the particulars of its directors with digital signatures. Companies that skip it are marked ACTIVE-non-compliant and are blocked from filing key forms such as allotment and capital alteration filings. Late filers pay a fee of Rs 10,000.
+
+### Which forms track the auditor lifecycle?
+
+ADT-1 files the appointment of the statutory auditor within 15 days of the general meeting, ADT-3 the auditor's resignation, and ADT-2 seeks approval for removal before the term ends; ADT-4 is the auditor's intimation to the central government where a company fails to appoint one. Companies requiring a cost audit appoint the cost auditor in CRA-2 and file the cost audit report in CRA-4.
+
+### What are the GNL forms used for?
+
+GNL-1 carries applications to the Registrar where no dedicated form exists, GNL-2 is the general document submission route, GNL-3 discloses particulars of individuals charged under the officer-in-default clauses of section 2(60), and GNL-4 is the addendum to correct a filed form. Alongside these, CRL-1 reports layers of investment, MGT-3 notifies the location of a foreign register, MGT-6 files section 89 declarations and INC-28 intimates court or tribunal orders.
+
+### How does dormant company status work?
+
+A company that intends to stay inactive can obtain dormant status instead of striking off: MSC-1 applies for the status, MSC-3 is the annual return of dormant companies, and MSC-4 applies to return to active status when operations resume. Dormant companies keep their identity at minimal cost and file only the light annual set.
 
 ## Related Services
 

@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import MarkdownContent from '../../components/MarkdownContent.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import CtaBanner from '../../components/CtaBanner.astro';
+import { learningPillars } from '../../config/site';
+import { getPillarBySlug, getPillarMembers, validateLearningClusters, seedVars } from '../../lib/learning';
+import { fill } from '../../lib/pages';
+
+validateLearningClusters();
+
+export function getStaticPaths() {
+  return learningPillars.map((pillar) => ({
+    params: { pillar: pillar.slug },
+    props: { pillar },
+  }));
+}
+
+interface Props {
+  pillar: (typeof learningPillars)[number];
+}
+
+const { pillar } = Astro.props as Props;
+const { displayVars, slugVars } = seedVars();
+
+const members = getPillarMembers(pillar, displayVars, slugVars);
+const faqs = pillar.faqs.map((f) => ({ q: fill(f.q, displayVars), a: fill(f.a, displayVars) }));
+const intro = fill(pillar.intro, displayVars);
+const path = `/learn/${pillar.slug}`;
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Learning Hub', href: '/learn' },
+  { label: pillar.name, href: path },
+];
+---
+<BaseLayout
+  title={fill(pillar.title, displayVars)}
+  description={fill(pillar.description, displayVars)}
+  path={path}
+  faqs={faqs}
+  breadcrumbs={crumbs}
+  pageType="CollectionPage"
+>
+  <article class="mx-auto max-w-3xl">
+    <Breadcrumbs crumbs={crumbs} />
+    <p class="mb-2 text-xs font-semibold uppercase tracking-widest text-brand-600">Learning Hub / Pillar</p>
+    <h1 class="mb-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{pillar.name}</h1>
+    <MarkdownContent content={intro} />
+
+    <section class="mt-10">
+      <h2 class="text-xl font-bold tracking-tight text-slate-900">
+        {members.length} guide{members.length === 1 ? '' : 's'} in this pillar
+      </h2>
+      <ul class="mt-4 divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white">
+        {members.map((m) => (
+          <li>
+            <a href={m.href} class="block px-5 py-4 transition hover:bg-brand-50">
+              <span class="font-semibold text-brand-700">{m.title}</span>
+              <span class="mt-1 block text-sm leading-relaxed text-slate-600">{m.description}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p class="mt-4 text-sm text-slate-500">
+        Every page lives in exactly one pillar — see the full shelf on the
+        <a class="font-medium text-brand-700 hover:text-brand-600" href="/learn">Learning Hub</a>.
+      </p>
+    </section>
+
+    <FaqAccordion faqs={faqs} />
+    <CtaBanner city={displayVars.city} />
+  </article>
+</BaseLayout>

@@ -40,6 +40,8 @@ faqs:
     a: "Realistically many months to over a year, depending on tribunal workload, creditor and shareholder objections, and regulatory approvals. Meeting-notice drafting, filings and affidavit quality materially affect how smoothly the scheme moves through."
   - q: "When is a slump sale better than selling assets individually?"
     a: "When the undertaking is sold as a going concern for a lump sum, Section 50B taxes gains on net worth — avoiding section 50C stamp-value uplift on immovable property and depreciation recapture complications that arise when assets are sold one by one."
+  - q: "Which MCA approvals feature in a restructuring?"
+    a: "Fast-track mergers under Section 233 are approved by the Regional Director through Form RD-1, while NCLT schemes proceed by petition with valuations and affidavits. Supporting filings include INC-23 for an inter-state registered office shift, INC-27 for converting between company classes, INC-18 and INC-12 for section 8 conversions and licences, INC-24 for name change approvals, and Form ADJ appeals against orders of the Registrar or the tribunal."
 ---
 
 > Corporate restructuring services help businesses reorganise ownership, entities and operations — through mergers, demergers, slump sales, share transfers or NCLT-sanctioned schemes — with tax efficiency and statutory compliance built in. In India the route chosen determines the capital gains treatment, stamp duty, accounting method and approval timeline, so structuring advice must precede execution.
@@ -96,6 +98,10 @@ Realistically many months to over a year, depending on tribunal workload, credit
 ### When is a slump sale better than selling assets individually?
 
 When the undertaking is sold as a going concern for a lump sum, Section 50B taxes gains on net worth — avoiding section 50C stamp-value uplift on immovable property and depreciation recapture complications that arise when assets are sold one by one.
+
+### Which MCA approvals feature in a restructuring?
+
+Fast-track mergers under Section 233 are approved by the Regional Director through Form RD-1, while NCLT schemes proceed by petition with valuations and affidavits. Supporting filings include INC-23 for an inter-state registered office shift, INC-27 for converting between company classes, INC-18 and INC-12 for section 8 conversions and licences, INC-24 for name change approvals, and Form ADJ appeals against orders of the Registrar or the tribunal.
 
 ## Related Services
 

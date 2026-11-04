@@ -40,6 +40,12 @@ faqs:
     a: "Yes, but FDI in LLPs is permitted only under the approval route and operates on a downstream-investment basis. At least one resident designated partner is mandatory. Foreign-controlled LLPs need careful FEMA documentation."
   - q: "Can an LLP be converted into a private limited company?"
     a: "Yes. An LLP can convert under Chapter X of the LLP Act 2008, subject to turnover and capital conditions and creditor consent. Many funded startups convert before raising equity, since LLPs cannot issue ESOPs or shares."
+  - q: "Which forms report changes inside an LLP?"
+    a: "Form 3 records LLP agreement amendments, Form 4 partner and designated partner changes, Form 5 a name change, Form 15 a registered office shift and Form 12 where a second address is kept for service of documents. Orders of a court or tribunal affecting the LLP are intimated in Form 22."
+  - q: "What if an LLP filing is defective or an offence needs compounding?"
+    a: "Filings marked defective or incomplete are corrected through a Form 32 addendum within the time the Registrar allows. Offences under the LLP Act can be compounded by applying in Form 31, and penalty orders are contested or settled through the LLP-ADJ adjudication mechanism. We assess each default and pick the route that minimises cost and exposure."
+  - q: "Can a foreign LLP or foreign company establish a place of business in India?"
+    a: "Yes. A foreign LLP or foreign company reserves its name in Form 25, registers its particulars with the Registrar in Form 27 within 30 days of establishing a place of business, and reports later alterations or closure in Form 28. Beneficial ownership disclosures continue through Form 4D and Form BEN-2 where applicable."
 ---
 
 > LLP registration in India is the process of incorporating a Limited Liability Partnership under the LLP Act 2008 through the registry's RUN-LLP and FiLLiP filings, creating a body corporate where partners' liability is limited to their agreed contribution and the firm's existence is separate from its members.
@@ -82,6 +88,31 @@ Documents are straightforward: PAN and Aadhaar of partners, address proof, photo
 
 Statutory audit becomes mandatory once turnover crosses Rs 40 lakh or contribution crosses Rs 25 lakh. Delay attracts continuing penalty per day on Form 8 and Form 11 — a silent liability we clear for clients through our [ROC compliance](/roc-compliance) practice.
 
+## The LLP Filing Map: Forms for Every Event
+
+Beyond the annual cycle, the LLP rule set covers incorporation, internal changes, foreign entities and remedial filings. Every event an LLP — or a foreign LLP (FLLP) operating in India — encounters has its own form, and {brand} prepares and files the full set:
+
+| Form | What it does |
+|---|---|
+| RUN-LLP | Reserves a name for a new or existing LLP |
+| FiLLiP | Application for incorporation, carrying the incorporation document in Form 2 |
+| Form 3 | LLP agreement and its amendments |
+| Form 4 | Appointment, cessation or change in partners and designated partners |
+| Form 5 | Notice of change of name |
+| Form 12 | Intimation of another address for service of documents |
+| Form 15 | Change in the place of the registered office |
+| Form 22 | Intimation of an order of a court or tribunal to the Registrar |
+| Form 23 | Application for a direction to the LLP to change its name |
+| Form 24 | Application for striking off the name of an inactive LLP |
+| Form 31 | Application for compounding of an offence under the Act |
+| Form 32 | Addendum for rectification of defects or incompleteness in a filing |
+| Form BEN-2 | Return of significant beneficial owner declarations under section 90 |
+| Form 4D | Return of declaration of beneficial interest in contribution received |
+| Form 25 | Reservation or renewal of a name by a foreign LLP or foreign company |
+| Form 27 | Registration of particulars by a foreign LLP |
+| Form 28 | Reporting of alteration or closure by a foreign LLP |
+| LLP-ADJ | Adjudication of penalties under the LLP Act |
+
 ## Taxation Points LLPs Overlook
 
 LLPs pay income tax at a flat 30% plus surcharge and cess. Partners' profit share is exempt in their hands u/s 10(2A), but remuneration and interest to partners must stay within the prescribed limits to remain deductible. From FY 2025-26, TDS u/s 194T applies to payments such as salary, remuneration, commission and interest to partners above the notified threshold. If an [audit](/tax-audit) applies, books and filings must meet the same discipline as a company's.
@@ -115,3 +146,15 @@ Yes, but FDI in LLPs is permitted only under the approval route and operates on 
 ### Can an LLP be converted into a private limited company?
 
 Yes. An LLP can convert under Chapter X of the LLP Act 2008, subject to turnover and capital conditions and creditor consent. Many funded startups convert before raising equity, since LLPs cannot issue ESOPs or shares.
+
+### Which forms report changes inside an LLP?
+
+Form 3 records LLP agreement amendments, Form 4 partner and designated partner changes, Form 5 a name change, Form 15 a registered office shift and Form 12 where a second address is kept for service of documents. Orders of a court or tribunal affecting the LLP are intimated in Form 22.
+
+### What if an LLP filing is defective or an offence needs compounding?
+
+Filings marked defective or incomplete are corrected through a Form 32 addendum within the time the Registrar allows. Offences under the LLP Act can be compounded by applying in Form 31, and penalty orders are contested or settled through the LLP-ADJ adjudication mechanism. We assess each default and pick the route that minimises cost and exposure.
+
+### Can a foreign LLP or foreign company establish a place of business in India?
+
+Yes. A foreign LLP or foreign company reserves its name in Form 25, registers its particulars with the Registrar in Form 27 within 30 days of establishing a place of business, and reports later alterations or closure in Form 28. Beneficial ownership disclosures continue through Form 4D and Form BEN-2 where applicable.

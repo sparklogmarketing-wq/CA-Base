@@ -40,6 +40,8 @@ faqs:
     a: "An ISIN is the unique 12-character identifier for each class of securities. The company obtains it from NSDL or CDSL through its registrar and transfer agent before accepting demat requests."
   - q: "How do I recover shares transferred to IEPF?"
     a: "The shareholder or legal heir files Form IEPF-5 online to claim shares and unclaimed dividends transferred to the IEPF Authority, supported by documents and an indemnity bond."
+  - q: "What is the PAS-6 reconciliation of share capital?"
+    a: "PAS-6 is the half-yearly reconciliation of share capital audit report for unlisted companies that hold shares in dematerialised form. It certifies that the total capital in the register of members matches the dematerialised and admitted capital at the depositories, signed by a practising chartered accountant, company secretary or cost accountant. We coordinate the RTA data and the professional certification as part of demat compliance."
 ---
 
 > Dematerialisation of shares is the conversion of physical share certificates into electronic holdings with a depository — NSDL or CDSL. For private limited companies, Rule 9B of the Companies (Prospectus and Allotment of Securities) Rules, 2014 makes dematerialisation of all securities mandatory, with transfers permitted only in demat form.
@@ -122,6 +124,10 @@ An ISIN is the unique 12-character identifier for each class of securities. The 
 ### How do I recover shares transferred to IEPF?
 
 The shareholder or legal heir files Form IEPF-5 online to claim shares and unclaimed dividends transferred to the IEPF Authority, supported by documents and an indemnity bond.
+
+### What is the PAS-6 reconciliation of share capital?
+
+PAS-6 is the half-yearly reconciliation of share capital audit report for unlisted companies that hold shares in dematerialised form. It certifies that the total capital in the register of members matches the dematerialised and admitted capital at the depositories, signed by a practising chartered accountant, company secretary or cost accountant. We coordinate the RTA data and the professional certification as part of demat compliance.
 
 ## Related Services
 

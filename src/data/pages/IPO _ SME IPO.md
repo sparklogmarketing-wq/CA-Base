@@ -71,7 +71,7 @@ Mainboard issuers must satisfy at least one of the Rule 19(2)(b) tracks: net tan
 ## The DRHP Process: A Realistic Timeline
 
 - **Readiness (several months)** — restated three-year financials, secretarial clean-up, [ROC compliance services](/roc-compliance) history verified, related-party transactions documented, share capital reconciled and shares dematerialised through [dematerialisation of shares](/dematerialisation-shares).
-- **Draft red herring prospectus (DRHP)** — prepared with the merchant banker and filed with SEBI; observations are typically issued within about 30 days of a compliant draft, with responses and re-filings in between.
+- **Draft red herring prospectus (DRHP)** — prepared with the merchant banker and filed with SEBI; observations are typically issued within about 30 days of a compliant draft, with responses and re-filings in between. The Companies Act side runs in parallel: the prospectus is filed with the Registrar in LEAP-1, the information memorandum in PAS-2, and PAS-3 returns record each allotment.
 - **RHP and price band** — filed and marketed before the issue opens.
 - **Book building and anchor book** — the issue runs for the prescribed working days, anchors allocated one day before opening.
 - **Allotment and listing** — credits and trading begin on the compressed T+3 timeline after the issue closes.
